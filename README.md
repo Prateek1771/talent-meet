@@ -1,36 +1,83 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Talent-Meet
 
-## Getting Started
+Talent-Meet is a web platform designed to streamline technical interviews by enabling interviewers to conduct real-time coding assessments, evaluate candidates, and provide feedback efficiently.
 
-First, run the development server:
+## 🚀 Features
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+- **Real-time Meetings**: Interviewers can create and share meeting links with candidates.
+- **Live Coding Assessments**: Candidates can solve coding problems and complete assignments within the platform.
+- **Screen Sharing & Recording**: Candidates can share their screens, and interviewers can review recordings.
+- **Feedback & Evaluation**: Interviewers can provide structured feedback based on candidate performance.
+- **Authentication & Security**: Integrated **Clerk** for secure user authentication.
+- **Real-time Collaboration**: Utilized **Convex** for instant database updates.
+- **Seamless Video Conferencing**: Integrated **Stream** for high-quality video calls.
+
+## 🛠 Tech Stack
+
+- **Frontend**: Next.js, Tailwind CSS, Shadcn UI, TypeScript
+- **Backend**: Convex (Real-time Database)
+- **Authentication**: Clerk
+- **Video Conferencing**: Stream
+
+### Project Demo: https://talent-meet.vercel.app
+
+## 📂 Project Structure
+
+```
+Talent-Meet/
+│── src/
+│   ├── components/  # UI components
+│   ├── pages/       # Next.js pages
+│   ├── hooks/       # Custom hooks
+│   ├── lib/         # Utilities & helpers
+│   ├── styles/      # Global styles
+│── public/          # Static assets
+│── convex/          # Database & API logic
+│── README.md        # Project documentation
+│── package.json     # Dependencies & scripts
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 🔧 Installation & Setup
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+1. **Clone the Repository**
+   ```sh
+   git clone https://github.com/your-username/Talent-Meet.git
+   cd Talent-Meet
+   ```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+2. **Install Dependencies**
+   ```sh
+   npm install
+   ```
 
-## Learn More
+3. **Set Up Environment Variables**
+   Create a `.env.local` file and configure the necessary API keys:
+   ```env
+   NEXT_PUBLIC_CLERK_FRONTEND_API=your_clerk_api_key
+   NEXT_PUBLIC_CONVEX_URL=your_convex_url
+   NEXT_PUBLIC_STREAM_API_KEY=your_stream_api_key
+   ```
 
-To learn more about Next.js, take a look at the following resources:
+4. **Run the Development Server**
+   ```sh
+   npm run dev
+   ```
+   Open [http://localhost:3000](http://localhost:3000) in your browser.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## 🌍 Deployment
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+You can deploy this project using platforms like **Vercel**:
+```sh
+vercel
+```
 
-## Deploy on Vercel
+## 📌 Contributing
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Contributions are welcome! Feel free to submit a pull request or open an issue.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## 📜 License
+
+This project is licensed under the **MIT License**.
+
+---
+
